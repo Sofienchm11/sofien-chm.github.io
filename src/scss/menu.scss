@@ -1,0 +1,96 @@
+#menu{
+     .nav__StyledHeader{
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        z-index: 11;
+        padding: 0px 50px;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(10, 25, 47, 0.85);
+        backdrop-filter: blur(10px);
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        filter: none !important;
+        pointer-events: auto !important;
+        user-select: auto !important;
+        border-bottom: 1px solid #64ffda;
+        .nav__StyledNav{
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            color: #ccd6f6;
+            font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+            counter-reset: item 0;
+            z-index: 12;
+            .logo{
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                a{
+                    color: #64ffda;
+                    width: 42px;
+                    height: 42px;
+                    #logo {
+                        color: #64ffda;
+                    }
+                }
+            }
+            .nav__StyledLinks{
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                ol{
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    padding: 0px;
+                    margin: 0px;
+                    list-style: none;
+                    li{
+                        margin: 0px 5px;
+                        position: relative;
+                        counter-increment: item 1;
+                        font-size: 13px;
+                        a{
+                            padding: 10px;
+                            display: inline-block;
+                            text-decoration: none;
+                            text-decoration-skip-ink: auto;
+                            color: inherit;
+                            position: relative;
+                            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+                            &::before{
+                                content: "0" counter(item) ".";
+                                margin-right: 5px;
+                                color: #64ffda;
+                                font-size: var(--fz-xxs);
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .resume{
+                    a{
+                        color: #64ffda;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .menu__StyledMenu{
+                display: none;
+            }
+        }
+     }
+}

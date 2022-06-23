@@ -1,0 +1,82 @@
+#banner{
+    background: #2b2f3b;
+    border-color: #2b2f3b;
+    color: #8f81c2;
+    min-height: calc(100vh - 22.5rem);
+    z-index: 1;
+    padding-top: 100px;
+    .code-block{
+        margin: 0;
+        text-align: left;
+        padding: 50px 0;
+        .code{
+            font-family: Fira Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+            text-align: left;
+            white-space: pre-wrap;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: break-word;
+            -moz-tab-size: 2;
+            -o-tab-size: 2;
+            tab-size: 2;
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+            counter-reset: a;
+            font-size: 18px;
+            .code-line {
+                counter-increment: a;
+                display: inline-table;
+                padding-left: 3ch;
+                position: relative;
+                &::before{
+                    content: counter(a) "\a●\a●\a●\a●\a●\a●\a●\a●\a●\a●";
+                    display: inline-block;
+                    opacity: .5;
+                    position: absolute;
+                    width: 3ch;
+                    top: 0;
+                    bottom: 0;
+                    left: -1ch;
+                    overflow: hidden;
+                    text-align: right;
+                }
+                .code-space{
+                    opacity: .25;
+                    display: table-cell;
+                    vertical-align: top;
+                    position: relative;
+                    white-space: pre;
+                    &::before{
+                        content: "··········";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+                .code-hidden {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    white-space: nowrap;
+                    -webkit-clip-path: inset(50%);
+                    clip-path: inset(50%);
+                    border: 0;
+                }
+                .code-key {
+                    color: #f13e54;
+                }
+                .code-value {
+                    color: #40dd5a;
+                }
+            }
+        }
+    }
+}

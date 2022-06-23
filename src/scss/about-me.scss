@@ -1,0 +1,112 @@
+#aboutme {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding: 100px 0;
+  background-color: #0a192f;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 200px;
+
+  .left{
+    .service-bottom-content{
+      visibility: visible;
+      animation-name: fadeInUp;
+      margin-top: -75px;
+      position: relative;
+      img{
+        width: 100%;
+      }
+    }
+    .about-img{
+      margin-bottom: 50px;
+    }
+  }
+
+  .right{
+    text-align: left;
+  }
+}
+#about-area{
+  .about-area-left{
+    .about-img{
+      margin-bottom: 50px;
+      img{
+        &:hover{
+          transform: scale(1.02);
+        }
+      }
+    }
+    .resume-btn{
+      max-width: 374px;
+      text-align: center;
+      .custom-btn {
+        color: #fff;
+        width: fit-content;
+        height: 40px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        font-family: "SFMono";
+        font-size: 13px;
+        &.btn-15 {
+          color: #64ffda;
+          border: 1px solid#64ffda;
+          z-index: 1;
+          &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            background: #64ffda;
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            color: #000;
+            &:after {
+              left: 0;
+              width: 100%;
+            }
+          }
+          &:active {
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .about-area-right{
+    .section-title{
+      h2{
+        color: #ccd6f6;
+        &::before{
+          position: relative;
+          bottom: 4px;
+          counter-increment: section 1;
+          content: "0" counter(section) ".";
+          margin-right: 10px;
+          color: #64ffda;
+          font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+    p{
+      color: #a5abbd;
+      font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    }
+    li{
+      color: #a5abbd;
+    }
+  }
+}
+
+
