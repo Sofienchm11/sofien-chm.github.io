@@ -1,0 +1,217 @@
+
+.portfolio{
+    padding: 100px 0;
+    background: #2b2f3b;
+    .protfolio__upper{
+        text-align: center;
+        h2{
+            color: #ccd6f6;
+            font-size: 2rem;
+            &::before{
+                position: relative;
+                bottom: 4px;
+                counter-increment: section 4;
+                content: "0" counter(section) ".";
+                margin-right: 10px;
+                color: #64ffda;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+    .portfolio__bottom{
+        margin-top: 30px;
+        .filter__heading{
+            ul{
+                display: flex;
+                justify-content: center;
+                li{
+                    list-style: none;
+                    border-radius: 3px;
+                    margin: 5px;
+                    cursor: pointer;
+                    -webkit-transition: all 05s ease;
+                    -moz-transition: all 05s ease;
+                    -ms-transition: all 05s ease;
+                    -o-transition: all 05s ease;
+                    transition: all 0.5s ease;
+                    position: relative;
+                    display: block;
+                    color: #64ffda;
+                    text-decoration: none;
+                    overflow: hidden;
+                    transition: 3s all ease;
+                    border: 1px solid #64ffda;
+                    z-index: 1;
+                    &.active{
+                        color: black;
+                        background: #64ffda;
+                        &::before{
+                            width: 100%;
+                        }
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: -1;
+                        transition: all 0.6s ease;
+                        background: #64ffda;
+                        width:0;
+                        height: 100%;
+                    }
+                    &:hover{
+                        color: black;
+                        &::before{
+                            width: 100%;
+                        }
+                    }
+                      
+                }
+            }
+        }
+        &__content{
+            margin-top: 20px;
+            .content__items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                &__list{
+                    position: relative;
+                    padding: 5px;
+                    list-style: none;
+                    &:hover{
+                        .list__overlay{
+                            visibility: visible;
+                            transform: scale(1);
+                            &::before{
+                                content: '';
+                                width: 40px;
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+                                z-index: 1;
+                                height: 1px;
+                                background-color: #64ffda;
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+                                transition-delay: 0.25s;
+                                width: 1px;
+                                height: 40px;
+                                background-color: #64ffda;
+                            }
+                        }
+                    }
+                    .list__img{
+                        img{
+                            max-width: -webkit-fill-available;
+                        }
+                    }
+                    .list__overlay{
+                        position: absolute;
+                        z-index: 2;
+                        top: 0;
+                        left: 0;
+                        background: #112240e3;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        visibility: hidden;
+                        transition: all 0.5s;
+                        transform: scale(0);
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        padding: 2rem 1.75rem;
+                        padding-top: 0;
+                        h1{
+                            font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+                            font-size: 22px;
+                            position: static;
+                            color: #ccd6f6;
+                            text-decoration: none;
+                        }
+                        p{
+                            font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+                            color: #a8b2d1;
+                            font-size: 17px;
+                            text-align: left;
+                        }
+                        .anim-09{
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            margin-top: 15px !important;
+                            margin: 0 auto;
+                            width: max-content;
+                            &:hover{
+                                &::before{
+                                    width: 120%;
+                                    height: 100%;
+                                }
+                            }
+                            &:before{
+                                content: "";
+                                border-bottom: 2px solid #64ffda;
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                                left: -4px;
+                                bottom: -4px;
+                                transition: all 0.4s;
+                            }
+                        }
+                        ul{                            
+                            display: flex;
+                            align-items: flex-end;
+                            -webkit-box-flex: 1;
+                            flex-grow: 1;
+                            flex-wrap: wrap;
+                            padding: 0px;
+                            margin: 20px 0px 0px;
+                            list-style: none;
+                            li{
+                                margin-right: 15px;
+                                font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+                                font-size: 12px;
+                                line-height: 1.75;
+                                color: #8892b0;
+                            }
+                        }
+                    }
+                }
+                .itemBox{
+                    position: relative;
+                    width: 300px;
+                    height: 250px;
+                    margin: 5px;
+                    display: block;
+                    &.hide{
+                        display: none;
+                    }
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

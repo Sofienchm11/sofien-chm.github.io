@@ -1,0 +1,267 @@
+$optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
+
+.experience {
+   .experience-top-head{
+      h2{
+         color: #ccd6f6;
+         &::before{
+           position: relative;
+           bottom: 4px;
+           counter-increment: section 2;
+           content: "0" counter(section) ".";
+           margin-right: 10px;
+           color: #64ffda;
+           font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+           font-size: 20px;
+           font-weight: 400;
+         }
+      }
+   }
+   .credit {
+      position: absolute;
+      bottom:20px;
+      left:20px;
+      
+      color:inherit;
+   }
+   .options {
+      display:flex;
+      flex-direction:row;
+      align-items:stretch;
+      overflow:hidden;
+
+      min-width:600px;
+      max-width:900px;
+      width:calc(100% - 100px);
+      
+      height:400px;
+      
+      @for $i from 1 through 4 {
+         @media screen and (max-width:798px) {
+            min-width:600px - $i*80;
+            .option:nth-child(#{6-$i}) {
+               display:none;
+            }
+         }
+      }
+      
+      .option {
+         position: relative;
+         overflow:hidden;
+
+         min-width:60px;
+         margin:10px;
+         //border:0px solid --defaultColor;
+
+         background:var(--optionBackground, var(--defaultBackground, #E6E9ED));
+         background-size:auto 120%;
+         background-position:center;
+
+         cursor: pointer;
+
+         transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+         @for $i from 1 through length($optionDefaultColours) {
+            &:nth-child(#{$i}) {
+               --defaultBackground:#{nth($optionDefaultColours, $i)};
+            }
+         }
+         &.active {
+            flex-grow:10000;
+            transform:scale(1);
+
+            max-width:600px;
+            margin:0px;
+            border-radius:40px;
+            
+            background-size:auto 100%;
+            .shadow {
+               box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+            }
+            .label {
+               bottom:20px;
+               left:20px;
+               .info >div {
+                  left:0px;
+                  opacity:1;
+               }
+            }
+            /*&:active {
+               transform:scale(0.9);
+            }*/
+         }
+         &:not(.active) {
+            flex-grow:1;
+            
+            border-radius:30px;
+            .shadow {
+               bottom:-40px;
+               box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+            }
+            .label {
+               bottom:10px;
+               left:10px;
+               .info >div {
+                  left:20px;
+                  opacity:0;
+               }
+            }
+         }
+         .shadow {
+            position: absolute;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            
+            height:120px;
+            
+            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+         }
+         .label {
+            display:flex;
+            position: absolute;
+            right:0px;
+
+            height:40px;
+            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            .icon {
+               display:flex;
+               flex-direction:row;
+               justify-content:center;
+               align-items:center;
+               
+               min-width:40px;
+               max-width:40px;
+               height:40px;
+               border-radius:100%;
+
+               background-color:white;
+               color:var(--defaultBackground);
+               img{
+                  border-radius: 15%;
+               }
+            }
+            .info {
+               display:flex;
+               flex-direction:column;
+               justify-content:center;
+               
+               margin-left:10px;
+               
+               color:white;
+               
+               white-space: pre;
+               >div {
+                  position: relative;
+                  
+                  transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
+               }
+               .main {
+                  font-weight:bold;
+                  font-size:1.2rem;
+               }
+               .sub {
+                  transition-delay:.1s;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+.experience{
+   padding: 100px 0;
+   background: #2b2f3b;
+   .experience-top-head{
+      margin-bottom: 50px;
+   }
+}
+.option.active:before {
+   content: "";
+   background: #0000007a;
+   transform: rotate(180deg);
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.options{
+   margin: 0 auto;
+}
+.option{
+  &.exp-1{
+   --optionBackground: url("../../assets/elyos.png") !important;
+  }
+  &.exp-2{
+   --optionBackground: url("../../assets/gostaff.png") !important;
+  }
+  &.exp-3{
+   --optionBackground: url("../../assets/enano-tech.jpg") !important;
+  }
+  &.exp-4{
+   --optionBackground: url("../../assets/carthage.png") !important;
+  }
+}
+#experience{
+    padding: 135px 0px;
+    background-color: #2b2f3b;
+    .experience-top-head{
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    .carousel{
+        position: relative;
+        .carousel-indicators{
+            top: 0px;
+            width: 85%;
+            margin-left: 15%;
+            left: 0%;
+            position: static;
+            margin-bottom: 80px;
+            li{
+                text-indent: 0;
+                background: none;
+                border: none;
+                margin: 0px;
+                position: relative;
+                width: 24%;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    border-top: 1px solid #C8CBD0;
+                    width: 265px;
+                    left: 0%;
+                }
+                &:active{
+                    width: 24%;
+                    height: 10px;
+                    margin: 0px;
+                    background: none;
+                    color: #6ECA3B;
+                    h4{
+                        font-size: 28px;
+                        left: 9%;
+                        margin-top: -35px;
+                    }
+                }
+                h4{
+                    position: absolute;
+                    left: 11%;
+                    margin-top: -30px;
+                    font-family: 'poppinsmedium';
+                }
+                i{
+                    position: absolute;
+                    margin-top: -10px;
+                    left: 15%;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
