@@ -3,7 +3,7 @@
     <header class="nav__StyledHeader">
         <nav class="nav__StyledNav">
             <div class="logo fade-enter-done" tabindex="-1">
-                <span class="custom-logo"></span>
+                <a href="#"><img src="../../assets/sofien-chm_logo.png" alt=""></a>
             </div>
             <div class="nav__StyledLinks">
                 <ol>

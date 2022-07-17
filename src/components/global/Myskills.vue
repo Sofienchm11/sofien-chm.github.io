@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="section-title">
                     <h2>My skills</h2>
-                    <p>Here are a few technologies I’ve been working with recently:</p>
+                    <p>Here are a few technologies I’ve been working with :</p>
                 </div>
                 <div class="myskills__contents">
                     <div class="myskills__contents__dev wrapper ">
-                        <input type="checkbox" id="folder">
-                        <label class="folder" for="folder"><span class="folder-title">Apps</span></label>
+                        <input type="checkbox" id="folder" class="folders">
+                        <label class="folder add_active" for="folder"><span class="folder-title">Apps</span></label>
                         <label class="fake-close-label" for="folder"></label>
                         <div class="folder-content">
                             <div class="app twitter">
@@ -30,11 +30,11 @@
                         </div>
                     </div>
                     <div class="myskills__contents__langue wrapper ">
-                        <input type="checkbox" id="folder">
-                        <label class="folder" for="folder"><span class="folder-title">Language</span></label>
-                        <label class="fake-close-label" for="folder"></label>
-                        <div class="folder-content">
-                            <!--<div class="app twitter">
+                        <input type="checkbox" id="folder__langue" class="folders">
+                        <label class="folder__langue add_active" for="folder__langue"><span class="folder-title__langue">Language</span></label>
+                        <label class="fake-close-label__langue" for="folder__langue"></label>
+                        <div class="folder-content__langue">
+                            <div class="app twitter">
                                 <img src="../../assets/english.png" alt="">
                                 <span>English</span>
                             </div>
@@ -46,21 +46,46 @@
                                 <img src="../../assets/tunisia.png" alt="">
                                 <span>Arabic</span>
                             </div>
-                            -->
+                          
                         </div>
                     </div>
+                    
                     <div class="myskills__contents__sofware wrapper ">
-                        <input type="checkbox" id="folder">
-                        <label class="folder" for="folder"><span class="folder-title">Software</span></label>
-                        <label class="fake-close-label" for="folder"></label>
-                        <div class="folder-content">
-                            <div class="app twitter"><span><font-awesome-icon icon="fab fa-skype" /></span></div>
-                            <div class="app dribbble"><span><font-awesome-icon icon="fab fa-skype" /></span></div>
-                            <div class="app dropbox"><i class="fa fa-dropbox"></i><span>Dropbox</span></div>
-                            <div class="app github"><i class="fa fa-github"></i><span>Github</span></div>
-                            <div class="app codepen"><i class="fa fa-codepen"></i><span>Codepen</span></div>
+                        <input type="checkbox" id="folder__sofware" class="folders">
+                        <label class="folder__sofware add_active" for="folder__sofware"><span class="folder-title__sofware">Software</span></label>
+                        <label class="fake-close-label__sofware" for="folder__sofware"></label>
+                        <div class="folder-content__sofware">
+                            <div class="app figma">
+                                <img src="../../assets/figma.png" alt="">
+                                <span>Figma</span>
+                            </div>
+                            <div class="app photoshop">
+                                <img src="../../assets/photoshop.png" alt="">
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="app illustrator">
+                                <img src="../../assets/illustrator.png" alt="">
+                                <span>Illustrator</span>
+                            </div>
+                            <div class="app ubuntu">
+                                <img src="../../assets/ubuntu.png" alt="">
+                                <span>Ubuntu</span>
+                            </div>
+                            <div class="app windows">
+                                <img src="../../assets/windows.png" alt="">
+                                <span>Windows</span>
+                            </div>
+                             <div class="app git">
+                                <img src="../../assets/git.png" alt="">
+                                <span>Git</span>
+                            </div>
+                            <div class="app vscode">
+                                <img src="../../assets/vscode.png" alt="">
+                                <span>Vscode</span>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <!--
 
@@ -178,8 +203,52 @@
 </style>
 
 <script>
+import $ from 'jquery'
 
 export default {
   name: "my-skills",
+  mounted(){
+    $('input.folders').change(function(){
+        if(this.checked){
+            $('label.add_active').addClass('input_checked');
+        }
+        else {
+         //do something else
+         $('label.add_active').removeClass('input_checked');
+    }
+    })
+    $('.myskills__contents__dev.wrapper input#folder').change(function(){
+        if(this.checked){
+            $('.folder-content__sofware').addClass('hide');
+            $('.folder-content__langue').addClass('hide');
+        }
+        else {
+            $('.folder-content__sofware').removeClass('hide');
+            $('.folder-content__langue').removeClass('hide');
+    }
+    })
+
+    $('.myskills__contents__langue.wrapper input#folder__langue').change(function(){
+        if(this.checked){
+            $('.folder-content__sofware').addClass('hide');
+            $('.folder-content').addClass('hide');
+        }
+        else {
+            $('.folder-content__sofware').removeClass('hide');
+            $('.folder-content').removeClass('hide');
+    }
+    })
+
+    $('.myskills__contents__sofware.wrapper input#folder__sofware').change(function(){
+        if(this.checked){
+            $('.folder-content__langue').addClass('hide');
+            $('.folder-content').addClass('hide');
+        }
+        else {
+            $('.folder-content__langue').removeClass('hide');
+            $('.folder-content').removeClass('hide');
+    }
+    })
+  }
 };
 </script>

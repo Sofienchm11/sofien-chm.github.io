@@ -27,6 +27,11 @@
   }
 }
 #about-area{
+  .row{
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
   .about-area-left{
     .about-img{
       margin-bottom: 50px;
@@ -83,6 +88,9 @@
     }
   }
   .about-area-right{
+    @media screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
     .section-title{
       h2{
         color: #ccd6f6;

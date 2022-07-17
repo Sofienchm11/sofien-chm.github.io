@@ -4,7 +4,7 @@
 				<div class="protfolio__upper">
           <div class="section-title">
               <h2>Portfolio</h2>
-              <p>Examples of my latest projects build with HTML, CSS and JavaScript. My portfolio includes static websites, web applications and illustrations made with pure CSS offering an insight into my recent accomplishments.</p>
+              <p>Examples of my latest projects build with HTML, CSS and JavaScript. <br> My portfolio includes worpdress websites, web applications and some design made with figma and adobe photshop</p>
           </div>
         </div>
         <div class="portfolio__bottom">
@@ -19,6 +19,273 @@
             </div>
           </div>
           <div class="portfolio__bottom__content">
+            <ul class="content__items row">
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/capi.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Capi</h1>
+                    <ul class="project-tech-list">
+                      <li>WordPress</li>
+                      <li>PHP</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://capi-agglo.fr/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/hairstetics.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Hairstetics</h1>
+                    <ul class="project-tech-list">
+                      <li>WordPress</li>
+                      <li>PHP</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://hairstetics.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/najen.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Najen nature</h1>
+                    <ul class="project-tech-list">
+                      <li>Prestashop</li>
+                      <li>scss</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://najen-nature.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/valrhona.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Valrhona</h1>
+                    <ul class="project-tech-list">
+                      <li>Magento</li>
+                      <li>scss</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://www.valrhona.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/redlean.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Readlean</h1>
+                    <ul class="project-tech-list">
+                      <li>Wordpress</li>
+                      <li>scss</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://redlean.io/en/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/sge.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>SGE & IEG</h1>
+                    <ul class="project-tech-list">
+                      <li>Wordpress</li>
+                      <li>scss</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://sgeieg.fr/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/techviz.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Techviz</h1>
+                    <ul class="project-tech-list">
+                      <li>Wordpress</li>
+                      <li>php</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://www.techviz.net/en/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/gostaffsite.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Gostaff</h1>
+                    <ul class="project-tech-list">
+                      <li>Wordpress</li>
+                      <li>php</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://gostaff.io/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/entrechasseur.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Entre chasseur</h1>
+                    <ul class="project-tech-list">
+                      <li>Magento</li>
+                      <li>scss</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://www.entrechasseurs.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/hockey.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>SOC Hockey</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>css</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="https://www.hockey-chambery.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/kalima.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Kalima editios</h1>
+                    <ul class="project-tech-list">
+                      <li>html</li>
+                      <li>css</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="http://www.kalima-edition.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="front">
+                <div class="list__img">
+                  <img src="../../assets/eseac.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>ESEAC</h1>
+                    <ul class="project-tech-list">
+                      <li>Drupal</li>
+                      <li>css</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <a href="http://www.eseac.ens.tn/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/gsdeppanage.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Gs deppanage</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>figma</li>
+                    </ul>
+                    <a href="https://gsdepannage.ch/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/gsdeppanage.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Gs deppanage</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>figma</li>
+                    </ul>
+                    <a href="https://gsdepannage.ch/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/adomik.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Adomik</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                    </ul>
+                    <a href="https://www.adomik.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/bayti.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Bayti</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                    </ul>
+                    <a href="https://bayti-property.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="wordpress">
+                <div class="list__img">
+                  <img src="../../assets/raf.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Raf 73</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                    </ul>
+                    <a href="#" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!--
             <ul class="content__items row" v-if="list.length">
               <li class="itemBox content__items__list col-4" data-item="wordpress" v-for="item in list" :key="item.id">
                 <div class="list__img" v-if="item.acf.image.url!=null">
@@ -50,6 +317,7 @@
                 <div class="list__links"></div>
               </li>
             </ul>
+            -->
           </div>
         </div>
       </div>

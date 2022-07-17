@@ -57,6 +57,7 @@
                         </div>
                         <div class="info">
                             <div class="main">Carthage solutions</div>
+                            
                             <div class="sub">Wordpress developer</div>
                         </div>
                     </div>
@@ -78,10 +79,9 @@ import $ from 'jquery'
 export default {
   name: "Experience-home",
     mounted () {
-   $(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
-   
+        $(".option").click(function(){
+        $(".option").removeClass("active");
+        $(this).addClass("active");
 });
 
 }

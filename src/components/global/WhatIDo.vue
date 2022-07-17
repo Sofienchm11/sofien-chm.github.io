@@ -3,6 +3,7 @@
         <div class="process-bottom" >
 			<div class="container">
                 <h2 class="head-two">What i do</h2>
+                <p>I can help you with all the sides of your project:</p>
                 <ul class="projects-grid">
                     <li class="projects__StyledProject" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <div class="project-inner">
@@ -11,24 +12,20 @@
                                     <div class="folder">
                                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                                     </div>
-                                    <div class="project-links">
-                                        <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
-                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h3 class="project-title">
-                                    <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" target="_blank" rel="noopener noreferrer">Wordpress developer</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">Front-end develoeper</a>
                                 </h3>
                                 <div class="project-description">
-                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                    <p>Full integration of front-end development using framework like Vue js and Angular or tools like Webpack with features like automatic code reload, code minifications, multiple environments support</p>
                                 </div>
                             </header>
                             <footer>
                                 <ul class="project-tech-list">
-                                    <li>Algolia</li>
-                                    <li>WordPress</li>
-                                    <li>PHP</li>
+                                    <li>Html/css</li>
+                                    <li>Javascript</li>
+                                    <li>Vue js</li>
+                                    <li>Angular js</li>
                                 </ul>
                             </footer>
                         </div>
@@ -40,17 +37,12 @@
                                     <div class="folder">
                                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                                     </div>
-                                    <div class="project-links">
-                                        <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
-                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h3 class="project-title">
-                                    <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" target="_blank" rel="noopener noreferrer">Integrateur</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">Full stack</a>
                                 </h3>
                                 <div class="project-description">
-                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                    <p>With strong experience with wordpress i can implement approved designs into WordPress templates</p>
                                 </div>
                             </header>
                             <footer>
@@ -69,24 +61,19 @@
                                     <div class="folder">
                                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                                     </div>
-                                    <div class="project-links">
-                                        <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
-                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h3 class="project-title">
-                                    <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" target="_blank" rel="noopener noreferrer">Front end developer</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">Designer</a>
                                 </h3>
                                 <div class="project-description">
-                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                    <p>With good sense of design and UX i can design or edit your website to be as easy to use as possible while guiding users towards the end goal.</p>
                                 </div>
                             </header>
                             <footer>
                                 <ul class="project-tech-list">
-                                    <li>Algolia</li>
-                                    <li>WordPress</li>
-                                    <li>PHP</li>
+                                    <li>Figma</li>
+                                    <li>Adobe XD</li>
+                                    <li>Illustrator</li>
                                 </ul>
                             </footer>
                         </div>
