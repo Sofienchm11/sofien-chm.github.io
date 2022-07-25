@@ -1,0 +1,355 @@
+.experience .experience-top-head h2 {
+  color: #ccd6f6;
+}
+
+.experience .experience-top-head h2::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 2;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.experience .credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+
+.experience .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+
+@media screen and (max-width: 798px) {
+  .experience .options {
+    min-width: 520px;
+  }
+  .experience .options .option:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .experience .options {
+    min-width: 440px;
+  }
+  .experience .options .option:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .experience .options {
+    min-width: 360px;
+  }
+  .experience .options .option:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .experience .options {
+    min-width: 280px;
+  }
+  .experience .options .option:nth-child(2) {
+    display: none;
+  }
+}
+
+.experience .options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.experience .options .option:nth-child(1) {
+  --defaultBackground:#ED5565;
+}
+
+.experience .options .option:nth-child(2) {
+  --defaultBackground:#FC6E51;
+}
+
+.experience .options .option:nth-child(3) {
+  --defaultBackground:#FFCE54;
+}
+
+.experience .options .option:nth-child(4) {
+  --defaultBackground:#2ECC71;
+}
+
+.experience .options .option:nth-child(5) {
+  --defaultBackground:#5D9CEC;
+}
+
+.experience .options .option:nth-child(6) {
+  --defaultBackground:#AC92EC;
+}
+
+.experience .options .option.active {
+  -webkit-box-flex: 10000;
+      -ms-flex-positive: 10000;
+          flex-grow: 10000;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+  /*&:active {
+               transform:scale(0.9);
+            }*/
+}
+
+.experience .options .option.active .shadow {
+  -webkit-box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+          box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.experience .options .option.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.experience .options .option.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+
+.experience .options .option:not(.active) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 30px;
+}
+
+.experience .options .option:not(.active) .shadow {
+  bottom: -40px;
+  -webkit-box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+          box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+.experience .options .option:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.experience .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+
+.experience .options .option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.experience .options .option .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.experience .options .option .label .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+
+.experience .options .option .label .icon img {
+  border-radius: 15%;
+}
+
+.experience .options .option .label .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+
+.experience .options .option .label .info > div {
+  position: relative;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.experience .options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.experience .options .option .label .info .sub {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.experience {
+  padding: 100px 0;
+  background: #2b2f3b;
+}
+
+.experience .experience-top-head {
+  margin-bottom: 50px;
+}
+
+.option.active:before {
+  content: "";
+  background: #0000007a;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.options {
+  margin: 0 auto;
+}
+
+.option.exp-1 {
+  --optionBackground: url("../../assets/elyos.png") !important;
+}
+
+.option.exp-2 {
+  --optionBackground: url("../../assets/gostaff.png") !important;
+}
+
+.option.exp-3 {
+  --optionBackground: url("../../assets/enano-tech.jpg") !important;
+}
+
+.option.exp-4 {
+  --optionBackground: url("../../assets/carthage.png") !important;
+}
+
+#experience {
+  padding: 135px 0px;
+  background-color: #2b2f3b;
+}
+
+#experience .experience-top-head {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+#experience .carousel {
+  position: relative;
+}
+
+#experience .carousel .carousel-indicators {
+  top: 0px;
+  width: 85%;
+  margin-left: 15%;
+  left: 0%;
+  position: static;
+  margin-bottom: 80px;
+}
+
+#experience .carousel .carousel-indicators li {
+  text-indent: 0;
+  background: none;
+  border: none;
+  margin: 0px;
+  position: relative;
+  width: 24%;
+}
+
+#experience .carousel .carousel-indicators li::before {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #C8CBD0;
+  width: 265px;
+  left: 0%;
+}
+
+#experience .carousel .carousel-indicators li:active {
+  width: 24%;
+  height: 10px;
+  margin: 0px;
+  background: none;
+  color: #6ECA3B;
+}
+
+#experience .carousel .carousel-indicators li:active h4 {
+  font-size: 28px;
+  left: 9%;
+  margin-top: -35px;
+}
+
+#experience .carousel .carousel-indicators li h4 {
+  position: absolute;
+  left: 11%;
+  margin-top: -30px;
+  font-family: 'poppinsmedium';
+}
+
+#experience .carousel .carousel-indicators li i {
+  position: absolute;
+  margin-top: -10px;
+  left: 15%;
+  font-size: 20px;
+}
+/*# sourceMappingURL=experience.css.map */

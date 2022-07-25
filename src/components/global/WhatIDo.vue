@@ -42,14 +42,15 @@
                                     <a href="#" target="_blank" rel="noopener noreferrer">Full stack</a>
                                 </h3>
                                 <div class="project-description">
-                                    <p>With strong experience with wordpress i can implement approved designs into WordPress templates</p>
+                                    <p>With strong experience with wordpress i can implement approved designs into WordPress templates with custom functions</p>
                                 </div>
                             </header>
                             <footer>
                                 <ul class="project-tech-list">
-                                    <li>Algolia</li>
                                     <li>WordPress</li>
                                     <li>PHP</li>
+                                    <li>javascript</li>
+                                    <li>html/css</li>
                                 </ul>
                             </footer>
                         </div>

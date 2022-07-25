@@ -214,16 +214,61 @@
               </li>
               <li class="itemBox content__items__list col-4" data-item="design">
                 <div class="list__img">
-                  <img src="../../assets/gsdeppanage.jpg">
+                  <img src="../../assets/jardain.jpg">
                 </div>
                 <div class="list__overlay">
                   <div class="overlay__content">
-                    <h1>Gs deppanage</h1>
+                    <h1>Compostage au jardin</h1>
                     <ul class="project-tech-list">
                       <li>wordpress</li>
                       <li>figma</li>
                     </ul>
-                    <a href="https://gsdepannage.ch/" class="anim-09">See project</a>
+                    <a href="https://www.compostage-au-jardin.org/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/rgpd.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>rgpd avocat</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>figma</li>
+                    </ul>
+                    <a href="https://www.rgpd-avocat.net/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/cuisine.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>Au sesame</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>figma</li>
+                    </ul>
+                    <a href="https://www.au-sesame.com/" class="anim-09">See project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="itemBox content__items__list col-4" data-item="design">
+                <div class="list__img">
+                  <img src="../../assets/pimenteo.jpg">
+                </div>
+                <div class="list__overlay">
+                  <div class="overlay__content">
+                    <h1>pimenteo</h1>
+                    <ul class="project-tech-list">
+                      <li>wordpress</li>
+                      <li>figma</li>
+                    </ul>
+                    <a href="https://www.pimenteo.com/" class="anim-09">See project</a>
                   </div>
                 </div>
               </li>
@@ -270,6 +315,7 @@
                   </div>
                 </div>
               </li>
+              
               <li class="itemBox content__items__list col-4" data-item="wordpress">
                 <div class="list__img">
                   <img src="../../assets/raf.jpg">
@@ -284,6 +330,7 @@
                   </div>
                 </div>
               </li>
+              
             </ul>
             <!--
             <ul class="content__items row" v-if="list.length">

@@ -1,0 +1,276 @@
+.portfolio {
+  padding: 100px 0;
+  background: #2b2f3b;
+}
+
+.portfolio .protfolio__upper {
+  text-align: center;
+}
+
+.portfolio .protfolio__upper h2 {
+  color: #ccd6f6;
+  font-size: 2rem;
+}
+
+.portfolio .protfolio__upper h2::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 4;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.portfolio .portfolio__bottom {
+  margin-top: 30px;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li {
+  list-style: none;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  display: block;
+  color: #64ffda;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 3s all ease;
+  transition: 3s all ease;
+  border: 1px solid #64ffda;
+  z-index: 1;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li.active {
+  color: black;
+  background: #64ffda;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li.active::before {
+  width: 100%;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  background: #64ffda;
+  width: 0;
+  height: 100%;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li:hover {
+  color: black;
+}
+
+.portfolio .portfolio__bottom .filter__heading ul li:hover::before {
+  width: 100%;
+}
+
+.portfolio .portfolio__bottom__content {
+  margin-top: 20px;
+}
+
+.portfolio .portfolio__bottom__content .content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list {
+  position: relative;
+  padding: 5px;
+  list-style: none;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list:hover .list__overlay {
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portfolio .portfolio__bottom__content .content__items__list:hover .list__overlay::before {
+  content: '';
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  height: 1px;
+  background-color: #64ffda;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list:hover .list__overlay::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  width: 1px;
+  height: 40px;
+  background-color: #64ffda;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__img img {
+  max-width: -webkit-fill-available;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #112240e3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1.75rem;
+  padding-top: 0;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay h1 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-size: 22px;
+  position: static;
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay p {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  color: #a8b2d1;
+  font-size: 17px;
+  text-align: left;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay .anim-09 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 15px !important;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay .anim-09:hover::before {
+  width: 120%;
+  height: 100%;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay .anim-09:before {
+  content: "";
+  border-bottom: 2px solid #64ffda;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -4px;
+  bottom: -4px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+}
+
+.portfolio .portfolio__bottom__content .content__items__list .list__overlay ul li {
+  margin-right: 15px;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #8892b0;
+}
+
+.portfolio .portfolio__bottom__content .content__items .itemBox {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin: 5px;
+  display: block;
+}
+
+.portfolio .portfolio__bottom__content .content__items .itemBox.hide {
+  display: none;
+}
+
+.portfolio .portfolio__bottom__content .content__items .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=portfolio.css.map */

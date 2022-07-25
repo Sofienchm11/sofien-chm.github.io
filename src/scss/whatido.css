@@ -1,0 +1,226 @@
+#whatido h2.head-two {
+  color: #ccd6f6;
+}
+
+#whatido h2.head-two::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 3;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#whatido h2.head-two:hover {
+  -webkit-animation-name: rubberBand;
+          animation-name: rubberBand;
+}
+
+#whatido .process-bottom {
+  background: #0a192f;
+  padding: 75px 0px;
+  color: #242B54;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#whatido ul.projects-grid {
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 15px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #whatido ul.projects-grid {
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+#whatido ul.projects-grid li.projects__StyledProject {
+  position: relative;
+  cursor: default;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner {
+  -webkit-box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+          box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: 4px;
+  background-color: #112240;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 35px;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-top .folder {
+  color: #64ffda;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-top .folder svg {
+  width: 40px;
+  height: 40px;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-title {
+  margin: 0px 0px 10px;
+  font-size: 22px;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-title a {
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  position: static;
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner header .project-description {
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  color: #a8b2d1;
+  font-size: 17px;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner footer ul.project-tech-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+}
+
+#whatido ul.projects-grid li.projects__StyledProject .project-inner footer ul.project-tech-list li {
+  margin-right: 15px;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #8892b0;
+}
+
+/* end of Process bottom area */
+.blast:hover {
+  -webkit-animation-name: rubberBand;
+          animation-name: rubberBand;
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+/*# sourceMappingURL=whatido.css.map */

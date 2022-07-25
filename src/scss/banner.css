@@ -1,0 +1,93 @@
+@charset "UTF-8";
+#banner {
+  background: #2b2f3b;
+  border-color: #2b2f3b;
+  color: #8f81c2;
+  min-height: calc(100vh - 22.5rem);
+  z-index: 1;
+  padding-top: 100px;
+}
+
+#banner .code-block {
+  margin: 0;
+  text-align: left;
+  padding: 50px 0;
+}
+
+#banner .code-block .code {
+  font-family: Fira Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  text-align: left;
+  white-space: pre-wrap;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: break-word;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  counter-reset: a;
+  font-size: 18px;
+}
+
+#banner .code-block .code .code-line {
+  counter-increment: a;
+  display: inline-table;
+  padding-left: 3ch;
+  position: relative;
+}
+
+#banner .code-block .code .code-line::before {
+  content: counter(a) "\a●\a●\a●\a●\a●\a●\a●\a●\a●\a●";
+  display: inline-block;
+  opacity: .5;
+  position: absolute;
+  width: 3ch;
+  top: 0;
+  bottom: 0;
+  left: -1ch;
+  overflow: hidden;
+  text-align: right;
+}
+
+#banner .code-block .code .code-line .code-space {
+  opacity: .25;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  white-space: pre;
+}
+
+#banner .code-block .code .code-line .code-space::before {
+  content: "··········";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#banner .code-block .code .code-line .code-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+#banner .code-block .code .code-line .code-key {
+  color: #f13e54;
+}
+
+#banner .code-block .code .code-line .code-value {
+  color: #40dd5a;
+}
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,135 @@
+body {
+  background: #edf2f3;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  -webkit-perspective: 600px;
+  padding: 100px 0;
+}
+
+.container h1 {
+  color: #000;
+}
+
+.carousel {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(-500px);
+  -webkit-animation: turn 16s linear infinite;
+  -webkit-animation-play-state: run;
+}
+
+.carousel:hover {
+  -webkit-animation-play-state: paused;
+}
+
+.carousel .panel {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: 50%;
+  margin-top: -50px;
+  left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+  text-transform: uppercase;
+}
+
+.carousel .panel .shadow {
+  margin-top: 40%;
+  color: Black;
+  text-shadow: 1px 1px white,  2px 2px white,  3px 3px white;
+  -webkit-animation: text 3s ease-in-out infinite alternate;
+}
+
+.carousel .panel .shadow:hover {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px white,  2px 2px white,  3px 3px white,  4px 4px white,  5px 5px white,  6px 6px white;
+}
+
+#panel-1 {
+  -webkit-transform: rotateY(0deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #F9DEC9, #F9DEC9);
+  -webkit-box-shadow: inset 5px 5px 10px #F9DEC9, inset -5px -5px 10px #F9DEC9;
+          box-shadow: inset 5px 5px 10px #F9DEC9, inset -5px -5px 10px #F9DEC9;
+}
+
+#panel-2 {
+  -webkit-transform: rotateY(45deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #99B2DD, #99B2DD);
+  -webkit-box-shadow: inset 5px 5px 10px #99B2DD, inset -5px -5px 10px #99B2DD;
+          box-shadow: inset 5px 5px 10px #99B2DD, inset -5px -5px 10px #99B2DD;
+}
+
+#panel-3 {
+  -webkit-transform: rotateY(90deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #E9AFA3, #E9AFA3);
+  -webkit-box-shadow: inset 5px 5px 10px #E9AFA3, inset -5px -5px 10px #E9AFA3;
+          box-shadow: inset 5px 5px 10px #E9AFA3, inset -5px -5px 10px #E9AFA3;
+}
+
+#panel-4 {
+  -webkit-transform: rotateY(135deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #685044, #685044);
+  -webkit-box-shadow: inset 5px 5px 10px #685044, inset -5px -5px 10px #685044;
+          box-shadow: inset 5px 5px 10px #685044, inset -5px -5px 10px #685044;
+}
+
+#panel-5 {
+  -webkit-transform: rotateY(180deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #59C3C3, #59C3C3);
+  -webkit-box-shadow: inset 5px 5px 10px #59C3C3, inset -5px -5px 10px #59C3C3;
+          box-shadow: inset 5px 5px 10px #59C3C3, inset -5px -5px 10px #59C3C3;
+}
+
+#panel-6 {
+  -webkit-transform: rotateY(225deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #84A98C, #84A98C);
+  -webkit-box-shadow: inset 5px 5px 10px #84A98C, inset -5px -5px 10px #84A98C;
+          box-shadow: inset 5px 5px 10px #84A98C, inset -5px -5px 10px #84A98C;
+}
+
+#panel-7 {
+  -webkit-transform: rotateY(270deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #CAD2C5, #CAD2C5);
+  -webkit-box-shadow: inset 5px 5px 10px #CAD2C5, inset -5px -5px 10px #CAD2C5;
+          box-shadow: inset 5px 5px 10px #CAD2C5, inset -5px -5px 10px #CAD2C5;
+}
+
+#panel-8 {
+  -webkit-transform: rotateY(315deg) translateZ(400px);
+  background-image: -webkit-linear-gradient(top left, #EBEBEB, #EBEBEB);
+  -webkit-box-shadow: inset 5px 5px 10px #EBEBEB, inset -5px -5px 10px #EBEBEB;
+          box-shadow: inset 5px 5px 10px #EBEBEB, inset -5px -5px 10px #EBEBEB;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: translateZ(-500px) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    -webkit-transform: rotateZ(-10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(10deg);
+  }
+}
+/*# sourceMappingURL=carouselskills.css.map */

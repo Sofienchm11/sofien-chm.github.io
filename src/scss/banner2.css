@@ -1,0 +1,107 @@
+#banner_2 {
+  background: #0a192f;
+  border-color: #2b2f3b;
+  color: #8f81c2;
+  height: 75vh;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+#banner_2 .banner_terminal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+#banner_2 .banner_terminal.close {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+#banner_2 .terminal {
+  width: 250px;
+  font: inherit;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+#banner_2 .terminal .dollar:before {
+  content: '$';
+  color: #52a563;
+}
+
+#banner_2 .terminal .home {
+  color: #e28d47;
+  padding-bottom: 3px;
+}
+
+#banner_2 .terminal a {
+  font: 12px "Monaco", Inconsolata, monospace;
+  text-decoration: underline;
+  color: #f8f8f8;
+}
+
+#banner_2 .terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #banner_2 .terminal-window {
+    width: auto;
+  }
+}
+
+#banner_2 .terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+#banner_2 .terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+#banner_2 .terminal-window header .button.green {
+  background: #3BB662;
+}
+
+#banner_2 .terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+
+#banner_2 .terminal-window header .button.red {
+  background: #E75448;
+}
+
+#banner_2 .terminal-window .terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #30353A;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+/*# sourceMappingURL=banner2.css.map */

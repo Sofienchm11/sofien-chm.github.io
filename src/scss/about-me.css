@@ -1,0 +1,185 @@
+#aboutme {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding: 100px 0;
+  background-color: #0a192f;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 200px;
+}
+
+#aboutme .left .service-bottom-content {
+  visibility: visible;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  margin-top: -75px;
+  position: relative;
+}
+
+#aboutme .left .service-bottom-content img {
+  width: 100%;
+}
+
+#aboutme .left .about-img {
+  margin-bottom: 50px;
+}
+
+#aboutme .right {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  #about-area .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#about-area .about-area-left .about-img {
+  margin-bottom: 50px;
+  width: 379px;
+  height: 386px;
+  overflow: hidden;
+  position: relative;
+  padding: 2px;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+#about-area .about-area-left .about-img:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#64ffda), to(#64ffda)), -webkit-gradient(linear, left top, left bottom, from(#0a192f), to(#0a192f)), -webkit-gradient(linear, left top, left bottom, from(#64ffda), to(#64ffda)), -webkit-gradient(linear, left top, left bottom, from(#0a192f), to(#0a192f));
+  background-image: linear-gradient(#64ffda, #64ffda), linear-gradient(#0a192f, #0a192f), linear-gradient(#64ffda, #64ffda), linear-gradient(#0a192f, #0a192f);
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+
+#about-area .about-area-left .about-img:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+#about-area .about-area-left .about-img img {
+  border-radius: 10px;
+}
+
+#about-area .about-area-left .resume-btn {
+  max-width: 374px;
+  text-align: center;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn {
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-family: "SFMono";
+  font-size: 13px;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn.btn-15 {
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  z-index: 1;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #64ffda;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn.btn-15:hover {
+  color: #000;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+#about-area .about-area-left .resume-btn .custom-btn.btn-15:active {
+  top: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-area .about-area-right {
+    margin-bottom: 50px;
+  }
+}
+
+#about-area .about-area-right .section-title h2 {
+  color: #ccd6f6;
+}
+
+#about-area .about-area-right .section-title h2::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#about-area .about-area-right p {
+  color: #a5abbd;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+#about-area .about-area-right li {
+  color: #a5abbd;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+/*# sourceMappingURL=about-me.css.map */

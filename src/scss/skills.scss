@@ -51,6 +51,10 @@
               left: 0;
               width: 26rem;
               text-align: center;
+              @media screen and (max-width: 767px) {
+                transform: translateZ(0) scale(1);
+                width: 22rem;
+              }
               .app {        
                 span {
                   opacity: 1;
@@ -73,6 +77,10 @@
           
           border-radius: .8em;
           box-shadow: 0 .4em .8em rgba(0,0,0,.2);
+          @media screen and (max-width: 767px) {
+            width: 6em;
+            height: 6em;
+          }
         }
         
         .folder-content {
@@ -88,6 +96,10 @@
           transform: translateZ(0) scale(.3);
           border-radius: .4em;
           position: absolute;
+          @media screen and (max-width: 767px) {
+            left: -125%;
+            top: calc(-80% - .8em);
+          }
         }
       }
       &__langue{
@@ -129,6 +141,9 @@
               height: auto;
               width: 26rem;
               text-align: center;
+              @media screen and (max-width: 767px) {
+                width: 22rem;
+              }
               .app {        
                 span {
                   opacity: 1;
@@ -148,9 +163,12 @@
           width: 7em;
           height: 7em;
           background: rgba(255,255,255,.4);
-          
           border-radius: .8em;
           box-shadow: 0 .4em .8em rgba(0,0,0,.2);
+          @media screen and (max-width: 767px) {
+            width: 6em;
+            height: 6em;
+          }
         }
         
         .folder-content__langue {
@@ -166,6 +184,9 @@
           transform: translateZ(0) scale(.3);
           border-radius: .4em;
           position: absolute;
+          @media screen and (max-width: 767px) {
+            left: -127%;
+          }
         }
       }
       &__sofware{
@@ -209,6 +230,9 @@
               width: 26rem;
               text-align: center;
               right: 0;
+              @media screen and (max-width: 767px) {
+                width: 22rem;
+              }
               .app {        
                 span {
                   opacity: 1;
@@ -231,6 +255,10 @@
           
           border-radius: .8em;
           box-shadow: 0 .4em .8em rgba(0,0,0,.2);
+          @media screen and (max-width: 767px) {
+            width: 6em;
+            height: 6em;
+          }
         }
         
         .folder-content__sofware {
@@ -246,6 +274,10 @@
           transform: translateZ(0) scale(.3);
           border-radius: .4em;
           position: absolute;
+          @media screen and (max-width: 767px) {
+            top: calc(-85% - .8em);
+            left: -125%;
+          }
         }
       }
     }

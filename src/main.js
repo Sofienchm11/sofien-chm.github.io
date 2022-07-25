@@ -9,13 +9,14 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faMailchimp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false;
-library.add(faLinkedin, faGithub, faSkype, faMailchimp)
+library.add(faLinkedin, faGithub, faSkype, faMailchimp, faFacebook)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

@@ -11,21 +11,18 @@
 				</div>
 				<div class="contact__body">
 					<ul class="wrapper">
+						
 						<li class="icon linkedin">
 							<span class="tooltip">Linkedin</span>
-							<span><font-awesome-icon icon="fa-brands fa-linkedin" /></span>
+							<a href="https://www.linkedin.com/in/sofien-chm/" target="_blank"><span><font-awesome-icon icon="fa-brands fa-linkedin" /></span></a>
 						</li>
 						<li class="icon github">
-							<span class="tooltip">Github</span>
-							<span><font-awesome-icon icon="fab fa-github" /></span>
-						</li>
-						<li class="icon Mailchimp">
-							<span class="tooltip">Mailchimp</span>
-							<span><font-awesome-icon icon="fab fa-mailchimp" /></span>
+							<span class="tooltip">Facebook</span>
+							<a href="https://www.facebook.com/sofien.dk/" target="_blank"><span><font-awesome-icon icon="fab fa-facebook" /></span></a>
 						</li>
 						<li class="icon skype">
 							<span class="tooltip">Skype</span>
-							<span><font-awesome-icon icon="fab fa-skype" /></span>
+							<a href="skype:sofien-dk?chat"><span><font-awesome-icon icon="fab fa-skype" /></span></a>
 						</li>
 					</ul>
 					<div class="contact__body__email">
